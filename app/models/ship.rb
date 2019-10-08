@@ -9,3 +9,5 @@ def initialize(params)
   @booty = params[:booty]
   @@all << self
 end
+
+end
