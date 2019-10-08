@@ -3,7 +3,7 @@ require './environment'
 module FormsLab
   class App < Sinatra::Base
 
-    get "/" do
+    get "/pirates/new" do
       erb :new
     end
 
@@ -14,7 +14,7 @@ module FormsLab
         Ship.new(att)
       end
       @ships = Ship.all
-      
+
       erb :show
 
     end
